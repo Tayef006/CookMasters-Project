@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #faf9f6;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+}
+
+header .logo {
+    font-family: 'Castellar', cursive;
+    font-size: 3rem;
+}
+
+header blockquote {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    font-style: italic;
+    font-family: 'Castellar' , cursive;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: 'Castellar';
+}
+
+nav a:hover {
+    color: #333;
+}
+
+/* Section Styling */
+.chefs-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Castellar';
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Chef Card */
+.chef-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chef-card:nth-child(even) {
+    flex-direction: row-reverse; /* Alternate image and text positions */
+}
+
+.chef-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px #ff7e5f;
+}
+
+/* Image Styling */
+.chef-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 1.5rem;
+}
+
+.chef-card:nth-child(even) .chef-image img {
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
+
+/* Text Content */
+.chef-info h3 {
+    font-size: 1.8rem;
+    font-family: 'Georgia';
+    color: #ff7e5f;
+    margin-bottom: 0.5rem;
+}
+
+.chef-info p {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+footer nav a:hover {
+    color: #ff7e5f;
+}
+

@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #faf9f6;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+}
+
+header .logo {
+    font-family: 'Castellar', cursive;
+    font-size: 3rem;
+}
+
+header blockquote {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    font-style: italic;
+    font-family: 'Castellar' , cursive;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: 'Castellar';
+}
+
+nav a:hover {
+    color: #333;
+}
+
+.video-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Recipe Section */
+.recipe-section {
+    max-width: 1250px;
+    margin: 3rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-title {
+    text-align: center;
+    font-family: 'Castellar';
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styling */
+.card {
+    background: #fdfdfd;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px #b0b0b0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px #ff7e5f;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    font-family: 'Georgia';
+    color: #ff7e5f;
+    margin-bottom: 1rem;
+}
+
+.card ul, .card ol {
+    padding-left: 1.5rem;
+    color: #555;
+    line-height: 2.5;
+    font-size: 1rem;
+}
+
+.methodcard {
+    background: #fdfdfd;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px #b0b0b0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.methodcard:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px #ff7e5f;
+}
+
+.methodcard h3{
+    font-size: 1.8rem;
+    font-family: 'Georgia';
+    color: #ff7e5f;
+    margin-bottom: 1rem;
+}
+
+.methodcard ul, .methodcard ol {
+    padding-left: 1.5rem;
+    color: #555;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+/* Reviews Section */
+.reviews-section {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px #333(0, 0, 0, 0.05);
+}
+
+.reviews-section h3 {
+    font-size: 2rem;
+    font-family: 'Castellar';
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Review */
+.review {
+    padding: 1rem;
+    border-left: 4px solid #ff7e5f;
+    background: #fafafa;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #555;
+}
+
+.review p strong {
+    color: #333;
+    font-weight: bold;
+    margin-right: 0.2rem;
+}
+
+/* Rating Stars */
+.review p .stars {
+    color: #ffc107; /* Gold color for stars */
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+}
+
+.review p .stars span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.review p .stars span:hover {
+    transform: scale(1.2); /* Slight scaling effect on hover */
+}
+
+.review:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px #ff7e5f;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+footer nav a:hover {
+    color: #ff7e5f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .recipe-section {
+        padding: 1rem;
+    }
+
+    .recipe-title {
+        font-size: 2rem;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+
+    .card ul, .card ol, .reviews-section p {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+}
